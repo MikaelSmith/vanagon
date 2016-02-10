@@ -1,11 +1,11 @@
+require 'vanagon/engine/base'
 require 'vanagon/utilities'
 require 'vanagon/errors'
 require 'benchmark'
 
 class Vanagon
   class Engine
-    class Local
-      attr_accessor :target
+    class Local < Base
 
       def initialize(platform, target = nil)
         @platform = platform
